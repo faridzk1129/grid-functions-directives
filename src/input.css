@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply text-8xl;
+    color: theme(colors.coffe);
+  }
+}
+
+@layer components {
+  .grid-card {
+    @apply aspect-[4/3] md:aspect-[3/4] lg:aspect-video rounded-lg overflow-hidden hover:scale-95 ease-out duration-700;
+  }
+  .grid-image {
+    @apply w-full h-full bg-center bg-cover group-hover:scale-125 ease-out duration-1000;
+  }
+}
